@@ -13,8 +13,7 @@ body {
   color: #fff;
   background: #222;
   font-family: "Trap", sans-serif;
-  background: url("../../assets/images/bg1.png") center/cover no-repeat;
-  backdrop-filter: brightness(0.2);
+  background: url("../../assets/images/bg.png") center/cover no-repeat;
 }
 
 .btn {
@@ -29,7 +28,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  filter: alpha(opacity=50);
 }
 .btn:before {
   position: absolute;
@@ -89,9 +87,13 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.header__logo {
+  mix-blend-mode: difference;
+}
 .header__logo img {
   width: 450px;
   height: auto;
+  mix-blend-mode: difference;
 }
 
 .intro {
@@ -115,6 +117,7 @@ body {
   border-radius: 10px;
   background: #fff;
   transform: rotate(-18deg);
+  mix-blend-mode: difference;
 }
 .intro__text2 {
   color: #D8F729;
@@ -132,6 +135,7 @@ body {
   border-radius: 10px;
   background: #fff;
   transform: rotate(15deg);
+  mix-blend-mode: difference;
 }
 .intro__text3 {
   text-align: right;
@@ -146,6 +150,7 @@ body {
   border-radius: 10px;
   background: #fff;
   transform: rotate(-18deg);
+  mix-blend-mode: difference;
 }
 .intro__station-f {
   position: absolute;
@@ -156,11 +161,12 @@ body {
 .float-right {
   position: relative;
   margin-top: 200px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgb(255, 255, 255);
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
   margin-left: calc((100% - 1140px) / 2);
   padding: 30px;
+  mix-blend-mode: difference;
 }
 .float-right__container {
   max-width: 1140px;
@@ -325,11 +331,12 @@ body {
 
 .float-left {
   margin-top: 200px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgb(255, 255, 255);
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
   margin-right: calc((100% - 1140px) / 2);
   padding: 30px;
+  mix-blend-mode: difference;
 }
 .float-left__container {
   position: relative;

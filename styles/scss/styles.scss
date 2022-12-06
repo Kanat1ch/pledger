@@ -11,9 +11,12 @@
   }
 
   &__logo {
+    mix-blend-mode: difference;
+
     img {
       width: 450px;
       height: auto;
+      mix-blend-mode: difference;
     }
   }
 }
@@ -40,6 +43,7 @@
       border-radius: 10px;
       background: #fff;
       transform: rotate(-18deg);
+      mix-blend-mode: difference;
     }
   }
 
@@ -60,6 +64,7 @@
       border-radius: 10px;
       background: #fff;
       transform: rotate(15deg);
+      mix-blend-mode: difference;
     }
   }
 
@@ -76,6 +81,7 @@
       border-radius: 10px;
       background: #fff;
       transform: rotate(-18deg);
+      mix-blend-mode: difference;
     }
   }
 
@@ -89,11 +95,12 @@
 .float-right {
   position: relative;
   margin-top: 200px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 1);
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
   margin-left: calc((100% - $container-xl) / 2);
   padding: 30px;
+  mix-blend-mode: difference;
 
   &__container {
     max-width: $container-xl;
@@ -190,11 +197,12 @@
 
 .float-left {
   margin-top: 200px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 1);
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
   margin-right: calc((100% - $container-xl) / 2);
   padding: 30px;
+  mix-blend-mode: difference;
 
   &__container {
     position: relative;
