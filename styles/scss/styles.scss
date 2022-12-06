@@ -1,0 +1,379 @@
+@import 'layout';
+@import 'variables';
+
+.header {
+  padding: 60px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    img {
+      width: 450px;
+      height: auto;
+    }
+  }
+}
+
+.intro {
+  margin-top: 80px;
+
+  &__text {
+    font-size: 40px;
+    margin: 60px 0;
+    position: relative;
+  }
+
+  &__text1 {
+    text-align: right;
+
+    &:before {
+      position: absolute;
+      content: '';
+      top: -50px;
+      right: -50px;
+      width: 700px;
+      height: 15px;
+      border-radius: 10px;
+      background: #fff;
+      transform: rotate(-18deg);
+    }
+  }
+
+  &__text2 {
+    color: #D8F729;
+
+    span {
+      color: #F74828;
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      top: -70px;
+      left: -60px;
+      width: 600px;
+      height: 15px;
+      border-radius: 10px;
+      background: #fff;
+      transform: rotate(15deg);
+    }
+  }
+
+  &__text3 {
+    text-align: right;
+
+    &:before {
+      position: absolute;
+      content: '';
+      top: 20px;
+      right: -50px;
+      width: 1200px;
+      height: 15px;
+      border-radius: 10px;
+      background: #fff;
+      transform: rotate(-18deg);
+    }
+  }
+
+  &__station-f {
+    position: absolute;
+    top: -140px;
+    right: 0;
+  }
+}
+
+.float-right {
+  position: relative;
+  margin-top: 200px;
+  background: rgba(255, 255, 255, 0.8);
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  margin-left: calc((100% - $container-xl) / 2);
+  padding: 30px;
+
+  &__container {
+    max-width: $container-xl;
+  }
+
+  &__text {
+    font-size: 40px;
+  }
+
+  &__text1 {
+    color: #000;
+    padding: 30px 0;
+  }
+
+  &__text2 {
+    text-align: right;
+    color: #2405d3;
+    margin-top: 150px;
+  }
+
+  &__btn {
+    color: #000;
+    font-size: 20px;
+
+    &:before, &:after {
+      background: #000;
+    }
+
+    img {
+      filter: brightness(0)
+    }
+  }
+
+  .icon {
+    position: absolute;
+  }
+
+  .icon-1 { top: -160px; left: 60%; }
+  .icon-2 { top: -80px; left: 80%; }
+  .icon-3 { top: -38px; left: 45%; }
+  .icon-4 { top: 50px; left: 55%; }
+  .icon-5 { top: 90px; left: 68%; }
+  .icon-6 { top: 50px; left: 85%; }
+  .icon-7 { top: 150px; left: 50%; }
+  .icon-8 { top: 190px; left: 65%; }
+  .icon-9 { top: 150px; left: 80%; }
+
+  .icon-10 { top: 270px; left: 10%; }
+  .icon-11 { top: 300px; left: 25%; }
+  .icon-12 { top: 250px; left: 40%; }
+  .icon-13 { top: 300px; left: 55%; }
+  .icon-14 { top: 315px; left: 70%; }
+  .icon-15 { top: 315px; left: 85%; }
+
+  .icon-16 { top: 365px; left: -54px; }
+  .icon-17 { top: 450px; left: 1%; }
+  .icon-18 { top: 400px; left: 18%; }
+  .icon-19 { top: 350px; left: 35%; }
+
+  .icon-20 { top: 450px; left: 90%; }
+
+  .icon-21 { bottom: 20px; left: 60%; }
+  .icon-22 { bottom: 15px; left: 82%; }
+
+  .icon-23 { bottom: -53px; left: 10%; }
+  .icon-24 { bottom: -25px; left: 40%; }
+  .icon-25 { bottom: -44px; left: 70%; }
+
+  .icon-26 { bottom: -155px; left: 18%; }
+  .icon-27 { bottom: -145px; left: 33%; }
+  .icon-28 { bottom: -300px; left: 45%; }
+  .icon-29 { bottom: -200px; left: 60%; }
+
+}
+
+.care {
+  margin-top: 200px;
+
+  &__title {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  &__do {
+    color: #D8F729;
+    text-align: right;
+  }
+}
+
+.float-left {
+  margin-top: 200px;
+  background: rgba(255, 255, 255, 0.8);
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin-right: calc((100% - $container-xl) / 2);
+  padding: 30px;
+
+  &__container {
+    position: relative;
+    max-width: calc($container-xl - 30px);
+    margin-left: auto;
+
+    &:first-child:before {
+      position: absolute;
+      content: '';
+      top: -275px;
+      left: -100%;
+      right: -10px;
+      height: 15px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.8);
+      transform: rotate(12deg);
+    }
+  }
+
+  &__title {
+    font-size: 40px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__footer {
+    display: flex;
+  }
+
+  &__description {
+    font-size: 40px;
+    color: #000;
+    margin-right: 180px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.step-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 50px;
+  padding: 50px 30px;
+  margin: 10px;
+  flex: 1;
+
+  &__title {
+    font-size: 28px;
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      margin: 15px 0;
+    }
+  }
+
+  &__btn {
+    color: #D8F729;
+    font-size: 18px;
+  }
+
+  &__funds-value {
+    font-size: 28px;
+    text-align: center;
+    color: #D8F729;
+
+    span {
+      color: #F74828;
+    }
+  }
+
+  &__funds-percent {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+}
+
+.valuation {
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+    text-align: center;
+    color: #D8F729;
+
+    span:nth-child(2n + 1) {
+      font-size: 45px;
+    }
+  }
+
+  &__value {
+    font-size: 28px;
+    text-align: center;
+    color: #F74828;
+    margin-top: 20px;
+  }
+}
+
+.terms {
+  &__amount, &__duration {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__amount {
+    margin-bottom: 30px;
+  }
+
+  &__label {
+    font-size: 18px;
+  }
+
+  &__values {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.faq {
+  margin-top: 70px;
+  margin-bottom: 140px;
+
+  &__question {
+    margin-bottom: 50px;
+  }
+}
+
+.faq-question {
+  &__title {
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  &__answer {
+    display: none;
+    font-size: 25px;
+    color: #D8F729;
+    text-align: right;
+    margin-top: 10px;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 100px;
+
+  &__item {
+    color: #D8F729;
+    font-size: 28px;
+    text-decoration: none;
+  }
+
+  &__lines {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,85 @@
+@import 'variables';
+
+@font-face {
+  font-family: 'Trap';
+  src: url('/assets/fonts/trap700.otf');
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+  background: #222;
+  font-family: 'Trap', sans-serif;
+  background: url('/assets/images/bg1.png') center/cover no-repeat;
+  backdrop-filter: brightness(0.2);
+}
+
+.btn {
+  position: relative;
+  outline: none;
+  border: none;
+  color: #F74828;
+  font-size: 16px;
+  font-family: 'Trap', sans-serif;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  filter: alpha(opacity=50);
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    width: calc(100% - 60px);
+    height: 4px;
+    left: 30px;
+    background: #fff;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    width: calc(100% - 60px);
+    height: 4px;
+    left: 30px;
+    background: #fff;
+  }
+
+  &__decor {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: $container-xl;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1200px) {
+    max-width: $container-l;
+  }
+
+  @media screen and (max-width: 992px) {
+    max-width: $container-m;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: $container-s;
+  }
+
+  @media screen and (max-width: 576px) {
+    max-width: $container-xs;
+    padding: 0 15px;
+  }
+}
