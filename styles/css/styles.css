@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Trap";
-  src: url("/assets/fonts/trap700.otf");
+  src: url("../../assets/fonts/trap700.otf");
   font-weight: bold;
 }
 * {
@@ -13,7 +13,7 @@ body {
   color: #fff;
   background: #222;
   font-family: "Trap", sans-serif;
-  background: url("/assets/images/bg1.png") center/cover no-repeat;
+  background: url("../../assets/images/bg1.png") center/cover no-repeat;
   backdrop-filter: brightness(0.2);
 }
 
