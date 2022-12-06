@@ -28,7 +28,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  mix-blend-mode: difference;
 }
 .btn:before {
   position: absolute;
@@ -95,6 +94,14 @@ body {
   width: 450px;
   height: auto;
   mix-blend-mode: difference;
+}
+.header__btn {
+  position: fixed;
+  top: 100px;
+  right: calc((100% - 1140px) / 2);
+  z-index: 10;
+  background: #000;
+  border-radius: 30px;
 }
 
 .intro {

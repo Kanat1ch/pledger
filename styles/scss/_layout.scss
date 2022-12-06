@@ -17,7 +17,6 @@ body {
   background: #222;
   font-family: 'Trap', sans-serif;
   background: url('../../assets/images/bg.png') center/cover no-repeat;
-  //backdrop-filter: brightness(0.2);
 }
 
 .btn {
@@ -33,7 +32,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  mix-blend-mode: difference;
+  //mix-blend-mode: difference;
 
   &:before {
     position: absolute;
