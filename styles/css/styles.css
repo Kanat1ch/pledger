@@ -28,6 +28,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  mix-blend-mode: difference;
 }
 .btn:before {
   position: absolute;
@@ -488,6 +489,7 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
+  mix-blend-mode: difference;
 }
 
 /*# sourceMappingURL=styles.css.map */
